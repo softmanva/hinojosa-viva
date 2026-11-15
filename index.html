@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#06452f">
+<meta name="description" content="HINOJOSA VIVA. Asociación Cultural de Hinojosa de Duero. Porque un pueblo vivo es un pueblo con futuro.">
+<title>HINOJOSA VIVA | Asociación Cultural</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Nunito:wght@600;700;800;900&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--forest:#06452f;--green:#267b36;--blue:#0874b9;--orange:#ed7900;--gold:#ffc329;--cream:#fffaf0;--ink:#182c27;--line:#e9e4d9;--shadow:0 3px 12px #183c2818}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fffdf8;color:var(--ink);font-family:"DM Sans",Arial,sans-serif}
+a{color:inherit;text-decoration:none}.wrap{width:min(1500px,97%);margin:auto}
+.masthead{height:176px;position:relative;overflow:hidden;background:linear-gradient(100deg,#fff 0%,#fff 66%,#d7eaff 100%);border-bottom:1px solid #e2e8e6}
+.sky{position:absolute;right:0;top:0;width:35%;height:100%;background:linear-gradient(170deg,#b4dcff,#fff 76%);clip-path:polygon(13% 0,100% 0,100% 100%,0 100%)}
+.mountain{position:absolute;left:0;bottom:0;width:260px;height:95px;background:linear-gradient(160deg,#78a95b,#2c713d);clip-path:polygon(0 72%,12% 43%,25% 60%,43% 18%,56% 53%,72% 25%,100% 73%,100% 100%,0 100%)}
+.church-mini{position:absolute;left:55px;bottom:27px;width:86px;height:73px;background:#e5d4b3;border:3px solid #8e7051;z-index:1}
+.church-mini:before{content:"";position:absolute;left:-8px;top:-30px;width:96px;height:34px;background:#9a573b;clip-path:polygon(50% 0,100% 100%,0 100%)}
+.church-mini:after{content:"";position:absolute;left:27px;top:-61px;width:26px;height:63px;background:#d9c5a2;border:3px solid #8e7051}
+.brandrow{height:100%;position:relative;z-index:2;display:flex;align-items:center;padding-left:clamp(180px,14vw,225px);gap:20px}
+.brandlogo{width:170px;height:130px;flex:none}
+.brandwords{min-width:0}
+.brandwords h1{font:900 clamp(42px,5.6vw,84px)/.85 Nunito,sans-serif;letter-spacing:-5px;margin:0;color:#06452f;white-space:nowrap}
+.brandwords h1 span{color:#62a72a}
+.brandwords p{font:700 clamp(18px,2vw,31px)/1.1 Caveat,cursive;color:#142e25;margin:12px 0 0;white-space:nowrap}
+.brandwords .goldline{height:6px;width:74%;background:var(--gold);border-radius:100%;transform:rotate(-3deg);margin-top:8px}
+.org{border-left:2px solid var(--forest);padding-left:25px;margin-left:22px;font-size:clamp(13px,1.3vw,21px);line-height:1.5;white-space:nowrap}
+.social{margin-left:auto;display:flex;gap:12px;padding-right:14px}.social a{width:43px;height:43px;border-radius:50%;background:#06452f;color:#fff;display:grid;place-items:center;font-size:22px;font-weight:800;box-shadow:0 2px 5px #0002}
+.navbar{background:var(--forest);color:#fff;min-height:54px;position:relative;z-index:5}
+.nav{display:flex;align-items:stretch;justify-content:center;min-height:54px;gap:clamp(4px,2vw,28px)}
+.nav a{display:flex;align-items:center;justify-content:center;gap:10px;padding:0 clamp(12px,2vw,29px);font-size:clamp(14px,1.2vw,19px);font-weight:700;white-space:nowrap}
+.nav a:hover,.nav a.active{background:var(--gold);color:#173b2a;border-radius:0 0 9px 9px}
+.nav .ni{font-size:23px}.menu-btn{display:none}
+.hero{height:300px;position:relative;overflow:hidden;background:linear-gradient(120deg,#d4ebfa,#80b5d7 50%,#9fbd76)}
+.hero-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 50%}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#ffffffa8 0%,#ffffff5c 37%,transparent 67%)}
+.hero-inner{position:relative;z-index:1;height:100%;display:flex;align-items:center}
+.hero-copy{padding-left:6%;max-width:650px}
+.hero-copy h2{font:900 clamp(48px,6vw,86px)/.9 Nunito,sans-serif;letter-spacing:-5px;color:#06452f;margin:0 0 13px;text-shadow:0 1px #fff}
+.hero-copy h2 span{color:#62a72a}
+.hero-copy .slogan{font:700 clamp(27px,3.2vw,46px)/.98 Caveat,cursive;color:#073d2c;margin:0 0 7px}
+.hero-copy .stroke{height:6px;width:75%;background:var(--gold);border-radius:100%;transform:rotate(-4deg);margin:12px 0 0}
+.sticker{position:absolute;z-index:2;right:2.5%;bottom:17px;background:var(--gold);color:#06452f;padding:14px 25px;font:700 clamp(23px,2.8vw,39px)/.92 Caveat,cursive;text-align:center;transform:rotate(-7deg);clip-path:polygon(3% 6%,100% 0,94% 100%,0 90%)}
+.quick{background:#fffaf0;border-bottom:1px solid #eee3cd}
+.quickgrid{display:grid;grid-template-columns:repeat(6,1fr);min-height:112px;padding:10px 0}
+.quickitem{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:2px;border-right:1px solid #f1b936;font-size:clamp(13px,1.1vw,18px);line-height:1.15}
+.quickitem:last-child{border:0}.quickitem .emoji{font-size:clamp(34px,4vw,58px);line-height:1.1}
+.main{padding:15px 0 18px;background:#fffdf8}
+.cards{display:grid;grid-template-columns:1.08fr .96fr 1.08fr .84fr;gap:17px}
+.card{background:#fff;border:1px solid #e8e3d9;border-radius:13px;overflow:hidden;box-shadow:var(--shadow);min-width:0}
+.cardhead{height:47px;display:flex;align-items:center;gap:12px;padding:0 17px;color:white;font:800 clamp(18px,1.65vw,27px) Nunito,sans-serif;white-space:nowrap}
+.cardhead .symbol{font-size:26px}.h-green{background:#287b36}.h-blue{background:#0874b9}.h-orange{background:#ed7900}
+.cardbody{padding:12px 13px 13px;min-height:207px;font-size:clamp(13px,1.08vw,17px);line-height:1.34}
+.activity-layout,.news-layout,.about-layout{display:flex;gap:13px;height:100%}
+.poster,.news-photo{width:40%;flex:none;min-height:178px;border-radius:3px;display:grid;place-items:center;text-align:center}
+.poster{background:linear-gradient(145deg,#c5e9fb,#fff0bd 50%,#76ae62);font-size:55px;position:relative}
+.poster:after{content:"";position:absolute;inset:12px;border:2px dashed #fff8;border-radius:3px}
+.news-photo{background:linear-gradient(145deg,#b9d6e7,#7ba65c);font-size:54px}
+.cardbody p{margin:0 0 8px}.activity-list{list-style:none;padding:0;margin:0}.activity-list li{padding:3px 0 4px 14px;position:relative}.activity-list li:before{content:"◆";font-size:9px;color:#267b36;position:absolute;left:0;top:7px}
+.pill{display:inline-block;background:#287b36;color:#fff;padding:8px 13px;border-radius:22px;font-size:13px;font-weight:700;margin-top:8px;white-space:nowrap}
+.linkblue{color:#0874b9;text-decoration:underline;font-weight:700;display:inline-block;margin-top:7px}
+.about-layout .copy{flex:1}.church-art{font-size:92px;align-self:flex-end;line-height:1}
+.contact-intro{font-style:italic;font-weight:800;font-size:18px;margin-bottom:10px!important}
+.contact-line{display:flex;align-items:center;gap:10px;margin:9px 0;overflow-wrap:anywhere}
+.contact-line .ci{font-size:23px;width:30px;text-align:center;flex:none}
+.social-row{display:flex;gap:12px;margin:12px 0 8px 28px}.social-row span{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:#176dc0;color:#fff;font-weight:900;font-size:19px}.social-row span:nth-child(2){background:#bd3186}.social-row span:nth-child(3){background:#e21b24}
+.follow{display:block;border:1.5px solid #287b36;border-radius:20px;padding:7px 18px;text-align:center;color:#15532f;font-weight:700;width:max-content;margin:7px auto 0}
+.footer{background:#06452f;color:#fff;min-height:82px}
+.foot{display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:82px}
+.footleft{display:flex;align-items:center;gap:12px;font-weight:800}.footleft .house{font-size:38px}
+.footleft small{font-weight:400;font-size:13px}
+.footslogan{font:700 clamp(21px,2.5vw,35px) Caveat,cursive}
+.footright{display:flex;align-items:center;gap:12px;font-size:13px}.footright .mini{width:29px;height:29px;border-radius:50%;background:#fff;color:#06452f;display:grid;place-items:center;font-size:16px;font-weight:900}
+@media(max-width:1050px){.org{display:none}.brandrow{padding-left:150px}.brandlogo{width:125px}.cards{grid-template-columns:repeat(2,1fr)}.cardbody{min-height:180px}}
+@media(max-width:650px){.masthead{height:auto;min-height:105px}.mountain,.church-mini{display:none}.brandrow{padding:10px 4%;gap:9px}.brandlogo{width:57px;height:55px}.brandwords h1{font-size:clamp(27px,7vw,42px);letter-spacing:-2px}.brandwords p{font-size:17px;white-space:normal;margin-top:6px}.brandwords .goldline{margin-top:5px}.social{display:none}.menu-btn{display:block;margin-left:auto;border:0;background:none;color:var(--forest);font-size:28px}.nav{display:none;flex-direction:column;gap:0}.nav.open{display:flex}.nav a{min-height:44px;justify-content:flex-start;padding:0 5%}.hero{height:270px}.hero-copy{padding-left:3%}.hero-copy h2{font-size:48px;letter-spacing:-3px}.hero-copy .slogan{font-size:28px}.sticker{font-size:22px;padding:10px 17px;right:2%;bottom:8px}.quickgrid{grid-template-columns:repeat(3,1fr)}.quickitem{min-height:100px;border-bottom:1px solid #f1b936}.quickitem:nth-child(3){border-right:0}.quickitem:nth-child(n+4){border-bottom:0}.quickitem .emoji{font-size:36px}.cards{grid-template-columns:1fr}.cardbody{min-height:unset}.poster,.news-photo{min-height:145px}.foot{flex-direction:column;padding:14px 0;gap:8px;text-align:center}.footleft{justify-content:center}.footslogan{font-size:26px}}
+</style>
+</head>
+<body>
+<header>
+ <div class="masthead">
+  <div class="sky"></div><div class="mountain"></div><div class="church-mini"></div>
+  <div class="wrap brandrow">
+   <svg class="brandlogo" viewBox="0 0 170 130" aria-label="Símbolo de Hinojosa Viva">
+    <path d="M8 83 Q33 62 36 23 Q57 42 50 78 Q78 37 112 22 Q108 68 72 91" fill="none" stroke="#f28a00" stroke-width="12" stroke-linecap="round"/>
+    <path d="M48 91 Q62 39 78 24 Q92 48 83 84 Q106 42 130 33 Q130 78 97 98" fill="none" stroke="#62b52b" stroke-width="12" stroke-linecap="round"/>
+    <path d="M87 96 Q111 55 143 58 Q145 89 116 105" fill="none" stroke="#0874b9" stroke-width="11" stroke-linecap="round"/>
+    <path d="M8 108 Q80 130 157 102" fill="none" stroke="#0874b9" stroke-width="6" stroke-linecap="round"/>
+   </svg>
+   <div class="brandwords"><h1>HINOJOSA <span>VIVA</span></h1><div class="goldline"></div><p>Porque un pueblo vivo es un pueblo con futuro.</p></div>
+   <div class="org">ASOCIACIÓN CULTURAL<br>HINOJOSA DE DUERO · SALAMANCA</div>
+   <div class="social"><a href="#contacto" aria-label="Facebook">f</a><a href="#contacto" aria-label="Instagram">◎</a><a href="#contacto" aria-label="Correo">✉</a></div>
+   <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
+  </div>
+ </div>
+ <div class="navbar"><nav class="wrap nav" id="nav">
+  <a class="active" href="#inicio"><span class="ni">⌂</span> Inicio</a>
+  <a href="#actividades"><span class="ni">▦</span> Actividades⌄</a>
+  <a href="#noticias"><span class="ni">⚑</span> Noticias y Eventos</a>
+  <a href="#asociacion"><span class="ni">♟</span> La Asociación⌄</a>
+  <a href="#galeria"><span class="ni">▧</span> Galería</a>
+  <a href="#contacto"><span class="ni">✉</span> Contacto</a>
+ </nav></div>
+</header>
+<main>
+<section class="hero" id="inicio">
+ <!-- CAMBIAR FOTO: sustituye images/foto-pueblo.jpg por tu fotografía real, conservando ese nombre. -->
+ <img class="hero-photo" src="images/foto-pueblo.jpg" alt="Fotografía panorámica de Hinojosa de Duero" onerror="this.style.display='none'">
+ <div class="wrap hero-inner"><div class="hero-copy"><h2>HINOJOSA <span>VIVA</span></h2><p class="slogan">Porque un pueblo vivo<br>es un pueblo con futuro.</p><div class="stroke"></div></div></div>
+ <div class="sticker">¡Participa!<br>¡Disfruta!<br>¡Haz pueblo!</div>
+</section>
+<section class="quick"><div class="wrap quickgrid">
+ <div class="quickitem"><span class="emoji">👨‍👩‍👧‍👦</span>Actividades<br>para todas las edades</div>
+ <div class="quickitem"><span class="emoji">🧒</span>Talleres y juegos<br>infantiles</div>
+ <div class="quickitem"><span class="emoji">⚽</span>Deporte y ocio</div>
+ <div class="quickitem"><span class="emoji">🎭</span>Cultura y tradición</div>
+ <div class="quickitem"><span class="emoji">🥾</span>Excursiones y naturaleza</div>
+ <div class="quickitem"><span class="emoji">❤️</span>Convivencia y pasatiempos</div>
+</div></section>
+<section class="main" id="actividades"><div class="wrap cards">
+ <article class="card"><div class="cardhead h-green"><span class="symbol">▦</span> Próximas Actividades</div><div class="cardbody"><div class="activity-layout"><div class="poster" aria-label="Imagen decorativa de actividades">🎉</div><div><ul class="activity-list"><li>Próximos talleres</li><li>Juegos para pequeños y mayores</li><li>Encuentros y actividades de verano</li></ul><a class="pill" href="#contacto">Ver todas las actividades →</a></div></div></div></article>
+ <article class="card" id="noticias"><div class="cardhead h-blue"><span class="symbol">▤</span> Noticias</div><div class="cardbody"><div class="news-layout"><div class="news-photo" aria-label="Imagen de noticias">📰</div><div><strong>¡Comienza el verano en Hinojosa Viva!</strong><p>Un proyecto para llenar el pueblo de actividades para todos los vecinos.</p><a class="linkblue" href="#asociacion">Leer más →</a></div></div></div></article>
+ <article class="card" id="asociacion"><div class="cardhead h-orange"><span class="symbol">♟</span> Sobre Nosotros</div><div class="cardbody"><div class="about-layout"><div class="copy">Somos una asociación cultural con el objetivo de dinamizar Hinojosa de Duero, fomentar la convivencia y organizar actividades para todas las edades.<br><a class="pill" style="background:#ed7900" href="#contacto">Conoce más →</a></div><div class="church-art" aria-hidden="true">⛪</div></div></div></article>
+ <article class="card" id="contacto"><div class="cardhead h-green"><span class="symbol">✉</span> Contacto</div><div class="cardbody"><p class="contact-intro">¡Escríbenos!</p><div class="contact-line"><span class="ci">✉️</span><span>Correo próximamente</span></div><div class="contact-line"><span class="ci">🟢</span><span>WhatsApp próximamente</span></div><div class="social-row"><span>f</span><span>◎</span><span>▶</span></div><a class="follow" href="#contacto">Síguenos →</a></div></article>
+</div></section>
+<section id="galeria" style="padding:22px 0;background:#fffaf0;text-align:center"><div class="wrap"><strong style="font:900 23px Nunito;color:#06452f">Galería de Hinojosa</strong><p style="margin:5px 0;color:#65756e">Próximamente: fotografías del pueblo, las actividades y nuestros encuentros.</p></div></section>
+</main>
+<footer class="footer"><div class="wrap foot"><div class="footleft"><span class="house">⌂</span><span>HINOJOSA VIVA&nbsp; | &nbsp;<small>Asociación Cultural de Hinojosa de Duero</small></span></div><div class="footslogan">Un pueblo, mil momentos.</div><div class="footright">Síguenos: <span class="mini">f</span><span class="mini">◎</span><span class="mini">▶</span></div></div></footer>
+<script>
+const b=document.getElementById('menuBtn'),n=document.getElementById('nav');
+b.addEventListener('click',()=>n.classList.toggle('open'));
+n.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>n.classList.remove('open')));
+</script>
+</body></html>
